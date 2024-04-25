@@ -1,0 +1,54 @@
+[
+    {
+      "id": "001",
+      "cover_image": "https://i.ibb.co/T2fp80P/programming-background-with-person-working-with-codes-computer.jpg",
+      "author_img": "https://i.ibb.co/9gCdwfS/download-2.jpg",
+      "author_name": "John Doe",
+      "publish_date": "2024-04-22",
+      "heading": "How to get your first job as a self-taught programmer",
+      "hashtags": ["#fake", "#data", "#json"],
+      "read_time_min": 10
+    },
+    {
+      "id": "002",
+      "cover_image": "https://i.ibb.co/ZV7Ncb3/4.jpg",
+      "author_img": "https://i.ibb.co/6JXWp1D/desktop-wallpaper-animated-boy-handsome-boy-cartoon-thumbnail.jpg",
+      "author_name": "Jane Smith",
+      "publish_date": "2024-04-23",
+      "heading": "How to get your first job as a self-taught programmer",
+      "hashtags": ["#Lorem", "#ipsum", "#dolor"],
+      "read_time_min": 8
+    },
+    {
+      "id": "003",
+      "cover_image": "https://i.ibb.co/g9Z69t7/3.png",
+      "author_img": "https://i.ibb.co/rsRb0Gh/images-1.jpg",
+      "author_name": "Alice Johnson",
+      "publish_date": "2024-04-24",
+      "heading": "How to get your first job as a self-taught programmer",
+      "hashtags": ["#sit", "#amet", "#consectetur"],
+      "read_time_min": 12
+    },
+    {
+      "id": "004",
+      "cover_image": "https://i.ibb.co/JQ8xbvG/1.jpg",
+      "author_img": "https://i.ibb.co/XCtwBFy/images-2.jpg",
+      "author_name": "Michael Brown",
+      "publish_date": "2024-04-25",
+      "heading": "How to get your first job as a self-taught programmer",
+      "hashtags": ["#sed", "#do", "#eiusmod"],
+      "read_time_min": 6
+    },
+    {
+      "id": "005",
+      "cover_image": "https://i.ibb.co/ZV7Ncb3/4.jpg",
+      "author_img": "https://i.ibb.co/JvFVwvX/desktop-wallpaper-cute-cartoon-boys-thumbnail.jpg",
+      "author_name": "Emily Wilson",
+      "publish_date": "2024-04-26",
+      "heading": "How to get your first job as a self-taught programmer",
+      "hashtags": ["#tempor", "#incididunt", "#ut"],
+      "read_time_min": 15
+    }
+  ]
+
+  

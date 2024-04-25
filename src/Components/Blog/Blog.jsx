@@ -1,7 +1,7 @@
-
-const Blog = ({blog}) => {
-    console.log(blog);
-    const {id, cover_image, author_img, author_name,publish_date,
+import { BsBookmarkFill } from "react-icons/bs";
+import PropTypes from 'prop-types';
+const Blog = ({blog,handleBook}) => {
+    const { cover_image, author_img, author_name,publish_date,
         read_time_min,heading,hashtags}=blog;
     return (
         <div>
@@ -16,8 +16,7 @@ const Blog = ({blog}) => {
                     
                 </div>
                 <div>
-                    <h2 className="text-gray-400">{read_time_min} min read</h2>
-                    <button></button>
+                    <span className="text-gray-600">{read_time_min} min read  <button onClick={()=>handleBook(blog)}><BsBookmarkFill></BsBookmarkFill></button></span>
                 </div>
             </div>
             <h2 className="text-3xl font-semibold w-[500px] break-keep my-2">{heading}</h2>
@@ -34,5 +33,8 @@ const Blog = ({blog}) => {
         </div>
     );
 };
-
+Blog.propTypes = {
+    blog: PropTypes.object.isRequired,
+    handleBook:PropTypes.func
+  };
 export default Blog;

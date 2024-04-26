@@ -3,7 +3,7 @@ import { useState } from "react";
 import Blog from "../Blog/Blog";
 import PropTypes from 'prop-types'
 
-const Blogs = ({handleBook}) => {
+const Blogs = ({handleBook,handleReadingTime}) => {
     const [blogs,setBlogs]=useState([]);
     useEffect(() =>{
         fetch('knowledge.json')
@@ -11,12 +11,9 @@ const Blogs = ({handleBook}) => {
         .then(data=>setBlogs(data))
     },[])
     return (
-        <div className="w-2/3">
-            <h2>Blogs:{blogs.length}</h2>
+        <div className="w-2/3 rounded-lg">
             {
-
-
-                blogs.map((blog)=><Blog key={blog.id} blog={blog} handleBook={handleBook}></Blog>)
+        blogs.map((blog)=><Blog key={blog.id} blog={blog} handleBook={handleBook} handleReadingTime={handleReadingTime}></Blog>)
             }
         </div>
     );

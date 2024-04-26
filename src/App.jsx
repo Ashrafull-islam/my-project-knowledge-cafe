@@ -6,19 +6,23 @@ import Header from './Components/Header/Header'
 import Bookmark from './Components/Bookmark/Bookmark';
 
 function App() {
-  const [Bookmarks, setBookmarks]=useState([]);
+  const [bookmarks, setBookmarks]=useState([]);
   const handleBook=blog=>{
-    setBookmarks(blog);
-    const newBookmarks=[...Bookmarks,blog];
+    const newBookmarks=[...bookmarks,blog];
     setBookmarks(newBookmarks);
-    
+  }
+  const [readingTime,setReadingTime]=useState(0);
+
+  const handleReadingTime=time=>{
+    const newReadingTime=time+readingTime;
+    setReadingTime(newReadingTime);
   }
   return (
    <div className='w-10/12 mx-auto'>
     <Header></Header>
-    <div className='flex'>
-      <Blogs handleBook={handleBook}></Blogs>
-      <Bookmark></Bookmark>
+    <div className='flex gap-3'>
+      <Blogs handleBook={handleBook} handleReadingTime={handleReadingTime}></Blogs>
+      <Bookmark bookmarks={bookmarks} readingTime={readingTime}></Bookmark>
     </div>
    </div>
   )
